@@ -1,13 +1,13 @@
 import React from 'react';
 // import Component1 from '../components/landing/Component1';
-// import Component2 from '../components/landing/Component2';
+import Header from '../components/Layout/Header';
 // Import other components as needed
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      {/* <Component1 />
-      <Component2 /> */}
+      <Header />
+      
       {/* Render other components */}
     </div>
   );
