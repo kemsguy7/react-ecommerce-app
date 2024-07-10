@@ -1,0 +1,157 @@
+.header {
+  margin-top: 6rem;
+  margin-left: 7.5rem; // 120px converted to rem
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin-right: 2rem;
+      text-decoration: none;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      input {
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem 2.5rem 0.5rem 1rem;
+        background: #9D9E9D;
+        color: white;
+        width: 200px;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 10px;
+        color: white;
+      }
+    }
+
+    .toggle-icon {
+      display: none;
+      cursor: pointer;
+    }
+  }
+
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+
+    .close-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    .nav-item {
+      margin: 1rem 0;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  // Media Queries
+  @media (max-width: 768px) {
+    margin-left: 2rem; // Adjust margin for mobile view
+
+    .header-content {
+      justify-content: space-between;
+
+      .nav-left {
+        .toggle-icon {
+          display: block;
+        }
+
+        .logo {
+          margin-left: 1rem;
+        }
+      }
+
+      .nav-right {
+        .nav-item {
+          display: flex;
+          margin-right: 1rem;
+
+          svg {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .mobile-nav {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin-left: 1rem; // Further adjust margin for smaller screens
+
+    .header-content {
+      .nav-left {
+        .toggle-icon {
+          display: block;
+        }
+
+        .logo {
+          margin-left: 1rem;
+        }
+      }
+
+      .nav-right {
+        .nav-item {
+          display: flex;
+          margin-right: 0.5rem;
+
+          svg {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .mobile-nav {
+      display: flex;
+    }
+  }
+}
