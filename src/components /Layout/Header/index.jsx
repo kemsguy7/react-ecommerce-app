@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaChevronDown, FaSearch, FaHeart, FaShoppingCart, FaUser, FaBars } from 'react-icons/fa';
-import './Header.scss';
+import './index.scss';
 
 const Header = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
