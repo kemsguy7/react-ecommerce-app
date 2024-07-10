@@ -1,14 +1,14 @@
-import React from "react";
-import About from "../components/About/About";
-import NavBar from "../components/NavBar/NavBar";
+// import React from "react";
+// import About from "../components/About/About";
+// import NavBar from "../components/NavBar/NavBar";
 
-function AboutPage() {
-  return (
-    <>
-      <NavBar />
-      <About />
-    </>
-  );
-}
+// function AboutPage() {
+//   return (
+//     <>
+//       <NavBar />
+//       <About />
+//     </>
+//   );
+// }
 
-export default AboutPage;
+// export default AboutPage;

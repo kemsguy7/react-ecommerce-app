@@ -14,16 +14,9 @@ function App() {
         </Routes>
       </Router>
     </>
-    <>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          {/* <Route exact path="about" element={<AboutPage />} /> */}
-        </Routes>
-      </Router>
-    </>
+  
   );
 }
-}
+
 
 export default App;
