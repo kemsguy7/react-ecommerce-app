@@ -1,4 +1,7 @@
 import './index.scss'
+import {ContactSupport, DeliveryIcon, DiscountIcon} from '../../../assets'
+
+
 const Promotion = () => {
   return (
       <div className="promotion">
