@@ -1,0 +1,66 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/fonts';
+
+
+.promotion {
+   
+    &__container {
+      display: flex;
+      background:  #edeef2;
+      width: 100%;
+    }
+  
+    .promotion-items {
+      display: flex;
+      background-color: $white-background;
+      border-radius: 1rem;
+  
+    margin: 4rem 5rem;
+    width: 100%;
+
+    justify-content: space-evenly;
+ 
+     gap: 9rem;
+   
+  
+      .promotion-item {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding: 2rem;
+  
+        img {
+          
+          width: 3.313rem; 
+          height: 2.645rem; 
+        }
+  
+        &__text {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          line-height: 19.09px;
+         
+  
+          &__title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 40.83px;
+            text-align: left;
+            color: $primary-black-color;
+          }
+  
+          &__description {
+            font-family: 'SF Pro Text', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.09px;
+            text-align: left;
+            color: $primary-black-color;
+          }
+        }
+      }
+    }
+  }
+  

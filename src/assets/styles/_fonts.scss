@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('/fonts/SFProText/SFProText-Regular.woff2') format('woff2'),
+         url('/fonts/SFProText/SFProText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('/fonts/SFProText/SFProText-Bold.woff2') format('woff2'),
+         url('/fonts/SFProText/SFProText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

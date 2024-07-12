@@ -9,7 +9,11 @@ import Promotion from "./promotion";
 const Home = () => {
   
   return (
-    <Hero />
+    <div> 
+      <Hero />
+      <Promotion />
+    </div>
+    
   );
 };
 
