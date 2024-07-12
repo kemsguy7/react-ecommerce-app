@@ -37,7 +37,7 @@ const Promotion = () => {
                 <img src={icons[item.icon]} alt={`${item.icon.toLowerCase()}-icon`} />
               </div>
               <div className="promotion-item__text">
-                <p className="promotion-item__title">{item.title}</p>
+                <p className="promotion-item__title">{item.title} </p>
                 <p className="promotion-item__description">{item.body}</p>
               </div>
             </div>
