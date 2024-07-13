@@ -6,6 +6,12 @@ import Searchbar from './Icons/searchbar.svg';
 import ContactSupport from './Icons/contact-support.svg';
 import DeliveryIcon from './Icons/delivery-icon.svg';
 import DiscountIcon from './Icons/discount-icon.svg';
+import HeartIcon from './Icons/favorite-icon.svg';
+import CartIcon from './Icons/cart-body-filled.svg';
+import ChevronRightIcon from './Icons/chevron-right.svg';
+import ChevronLeftIcon from './Icons/chevron-left.svg';
+
+
 
 export {
     Favourite,
@@ -15,6 +21,10 @@ export {
     Searchbar,
     ContactSupport,
     DeliveryIcon,
-    DiscountIcon 
+    DiscountIcon, 
+    HeartIcon,
+    CartIcon,
+    ChevronRightIcon,
+    ChevronLeftIcon
 }
 

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 //import "./index.scss";
 import Hero from "./hero";
 import Promotion from "./promotion";
+import Collection from "./collection";
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     <div> 
       <Hero />
       <Promotion />
+      {/* <Collection /> */}
     </div>
     
   );
