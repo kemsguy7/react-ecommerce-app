@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './index.scss';
 import CollectionItems from './data';
@@ -7,7 +7,7 @@ import { HeartIcon, CartIcon, ChevronRightIcon, ChevronLeftIcon } from '../../..
 const collectionsImgPath = '../../../../images/collection/';
 
 const Collection = () => {
-  const [currentPage, setCurrentPage] = React.useState(0);
+  const [currentPage, setCurrentPage] = useState(0);
 
   const itemsPerPage = 4;
   const totalPages = Math.ceil(CollectionItems.length / itemsPerPage);
