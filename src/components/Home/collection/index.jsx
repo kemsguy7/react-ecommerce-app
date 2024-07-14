@@ -28,9 +28,9 @@ const Collection = () => {
   return (
     <div className="collection">
       <div className="collection__container">
-        <div className="collection-top" > 
+        <div className="collection-top">
           <h1 className="collection__header">Explore Our New Collection</h1>
-          <p className="collection__description">Some dummy text describing the collection.</p>`
+          <p className="collection__description">Some dummy text describing the collection.</p>
         </div>
 
         <div className="collection__gallery">
@@ -40,7 +40,7 @@ const Collection = () => {
                 <div
                   key={item.id}
                   className={`collection__gallery-item collection__gallery-item--${
-                    index % 4 === 0 ? 'large' : index % 4 === 1 ? 'medium' : 'small'
+                    index === 0 ? 'large' : index === 1 ? 'medium' : index === 2 ? 'small' : 'medium'
                   }`}
                 >
                   <img src={`${collectionsImgPath}${item.src}`} alt={`Item ${item.id}`} />

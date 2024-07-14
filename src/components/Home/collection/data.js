@@ -8,11 +8,11 @@ const CollectionItems = [
     },
     {
       id: '2',
-      src: 'sneakers-image-2.png'
+      src: 'sneakers-image-3.png'
     },
     {
       id : '3',
-      src : 'sneakers-image-3.png'
+      src : 'sneakers-image-2.png'
       
     },
     {
