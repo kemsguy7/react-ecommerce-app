@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Hero from "./hero";
 import Promotion from "./promotion";
 import Collection from "./collection";
+import SecondPromotion from "./secondPromotion";
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Hero />
       <Promotion />
       <Collection />
+      <SecondPromotion />
     </div>
     
   );
