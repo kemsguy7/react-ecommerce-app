@@ -1,0 +1,111 @@
+.gallery-one {
+    width: 100%;
+    margin: 1rem 5rem;
+    text-align: center;
+  
+    &__container {
+      position: relative;
+    }
+  
+    &__header {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    &__gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+  
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    &__gallery-item {
+      position: relative;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      & img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+      }
+  
+      .icon {
+        position: absolute;
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 0.6rem;
+        display: flex;
+  
+        &--heart {
+          top: 1.2rem;
+          right: 1rem;
+        }
+  
+        &--cart {
+          bottom: 1rem;
+          right: 1rem;
+        }
+      }
+  
+      &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+  
+        &__details {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+  
+          &__title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+          }
+  
+          &__rating {
+            display: flex;
+            align-items: center;
+  
+            & span {
+              margin-left: 0.5rem;
+              font-size: 0.9rem;
+            }
+          }
+  
+          &__price {
+            font-size: 1.5rem;
+            color: #333;
+          }
+        }
+      }
+    }
+  
+    &__view-more {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+  
